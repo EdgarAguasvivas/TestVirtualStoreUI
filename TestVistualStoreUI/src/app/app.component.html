@@ -1,0 +1,13 @@
+<div *ngIf="isAuthenticate; else showLogin">
+    <app-nav></app-nav>
+    <router-outlet></router-outlet>
+
+</div>
+<ng-template #showLogin>
+    <div *ngIf="isAuthenticate" class="text-center"> 
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <app-login  *ngIf="!isAuthenticate"></app-login>
+  </ng-template>
+  
+  

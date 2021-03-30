@@ -1,0 +1,16 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-info">Tu carrito esta vacio</div>
+
+<ul *ngIf="cartItems.length > 0" class="list-group">
+  <li class="list-group-item" *ngFor="let item of cartItems">
+    <div class="cart-item">
+        <span>{{ item?.product_Name }}</span> 
+        <span>{{ item?.quantity }}</span>:
+        <strong>{{ (item?.quantity * item?.price) | currency:'RD$' }}</strong>
+      </div>
+    <!-- <app-cartitem [cartItem]="item"></app-cartitem> -->
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total</strong> {{ cartTotal  | currency:'RD$' }}
+  </li>
+</ul>

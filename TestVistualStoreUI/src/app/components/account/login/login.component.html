@@ -1,0 +1,39 @@
+  <div class="container" style="padding-top:60px;">  
+    <div class="row">  
+      <div class="col-md-6 mx-auto">  
+        <div class="card-group">  
+          <div class="card p-4">  
+            <div class="card-body">  
+              <form [formGroup]="formLogin">   
+                <h1 style="text-align:center">Inisiar Session</h1>  
+  
+                <div class="input-group mb-3">  
+                  <div class="input-group-prepend">  
+                    <span class="input-group-text"><i class="icon-user"></i></span>  
+                  </div>  
+                  <input type="text" name="user_name" formControlName="user_name" class="form-control sty1" placeholder="Nombre de usuario" required>  
+                </div>  
+                <div class="input-group mb-4">  
+                  <div class="input-group-prepend">  
+                    <span class="input-group-text"><i class="icon-lock"></i></span>  
+                  </div>  
+                  <input  type="password" name="password" formControlName="password" class="form-control"  
+                 placeholder="Contraseña">  
+                </div> 
+                
+                <div class="row">  
+                  <div class="col-6">  
+                    <button type="submit" [disabled]="!formLogin.valid" (click)="login()" class="btn btn-primary px-4">Iniciar</button>  
+                  </div>  
+                  <div class="col-6 text-right">  
+                    <button type="button" routerLink="/registration" class="btn btn-link px-0">Registrarme?</button>  
+                  </div>  
+                </div>  
+  
+              </form>  
+            </div>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
