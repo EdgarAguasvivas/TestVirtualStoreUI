@@ -8,10 +8,10 @@
     </h5>
     <nav class="my-2 my-md-0 mr-md-3">
         
-      <a class="p-2 text-dark" [routerLink]="['/']">Tienda</a>
-      <a class="p-2 text-dark" [routerLink]="['/']">Productos</a>
+      <a class="p-2 text-dark" [routerLink]="['/shop']">Tienda</a>
+      <a class="p-2 text-dark" [routerLink]="['/productindex']">Productos</a>
       <a class="p-2 text-dark" [routerLink]="['/userindex']">Usuarios</a>
-      <a class="p-2 text-dark" href="#">Ventas</a>
+      <a class="p-2 text-dark" [routerLink]="['/']">Ventas</a>
     </nav>    
     <a class="btn btn-outline-secondary" (click)="logout()">Logout</a>
   </div>

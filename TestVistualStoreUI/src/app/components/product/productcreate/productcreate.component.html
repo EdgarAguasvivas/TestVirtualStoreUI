@@ -1,0 +1,28 @@
+<div class="container" style="padding-top:40px;">  
+    <div class="row">  
+      <div class="col-md-6 mx-auto">  
+        <div class="card mx-4">  
+          <div class="card-body p-4">  
+            <form [formGroup]="formproduct">  
+              <h1 style="text-align:center">Crear Producto</h1>  
+
+              <div class="input-group mb-3">  
+                <input type="text" class="form-control" placeholder="Nombre"  formControlName="product_name">  
+              </div>  
+              <div class="input-group mb-3">  
+                <input type="text" class="form-control" placeholder="Codigo"  formControlName="product_code">  
+              </div>  
+              <div class="input-group mb-3">  
+                <input type="text" class="form-control" placeholder="Precio"  formControlName="price">  
+              </div> 
+              <div class="input-group mb-3">  
+                <input type="text" class="form-control" placeholder="Cantidad"  formControlName="quantity">  
+              </div> 
+            
+              <button type="submit" [disabled]="!formproduct.valid" (click)="create()" class="btn btn-block btn-success">Guardar</button>  
+            </form>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
