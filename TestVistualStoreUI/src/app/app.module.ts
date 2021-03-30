@@ -12,6 +12,14 @@ import { DashboardComponent } from './components/template/dashboard/dashboard.co
 import { UserComponent } from './components/user/userindex/user.component';
 import { UsercreateComponent } from './components/user/usercreate/usercreate.component';
 import { UsereditComponent } from './components/user/useredit/useredit.component';
+import { ProductindexComponent } from './components/product/productindex/productindex.component';
+import { ProductcreateComponent } from './components/product/productcreate/productcreate.component';
+import { ProducteditComponent } from './components/product/productedit/productedit.component';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
+import { ProductlistComponent } from './components/shoppingcart/productlist/productlist.component';
+import { CartComponent } from './components/shoppingcart/cart/cart.component';
+import { FiltersComponent } from './components/shoppingcart/filters/filters.component';
+import { CartitemComponent } from './components/shoppingcart/cart/cartitem/cartitem.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { UsereditComponent } from './components/user/useredit/useredit.component
     DashboardComponent,
     UserComponent,
     UsercreateComponent,
-    UsereditComponent
+    UsereditComponent,
+    ProductindexComponent,
+    ProductcreateComponent,
+    ProducteditComponent,
+    ShoppingcartComponent,
+    ProductlistComponent,
+    CartComponent,
+    FiltersComponent,    
+    CartitemComponent
   ],
   imports: [
     BrowserModule,

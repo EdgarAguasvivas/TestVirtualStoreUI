@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     localStorage.removeItem('UserName');  
+    localStorage.removeItem('ID');  
     localStorage.setItem("isAuthenticate","false");       
   }
 
@@ -37,7 +38,8 @@ export class LoginComponent implements OnInit {
       data =>    
       {      
         this.formLogin.reset();
-        localStorage.setItem("UserName",data.user_Name);   
+        localStorage.setItem("UserName",data.user_Name); 
+        localStorage.setItem("ID",data.id); 
         localStorage.setItem("isAuthenticate","true");     
         this.router.navigate(['/dashboard']);
        
