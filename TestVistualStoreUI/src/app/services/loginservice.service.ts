@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
 })
 export class LoginserviceService {
   Url :string;  
-  token : string;  
   header : any;
 
   constructor(private http : HttpClient) { 
