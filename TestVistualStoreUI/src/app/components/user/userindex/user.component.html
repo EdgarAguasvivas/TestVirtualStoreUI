@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="form-group">
+    <button class="btn btn-primary" [routerLink]="['/usercreate']">Crear usuario</button>
+</div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Usuario</th>
+            <th scope="col">Rol</th> 
+            <th>Accion</th>           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of userList">
+            <th scope="row">{{item.user_Name}}</th>
+            <td>{{item.rol === 1 ? 'Administrador' : ''}}</td>
+            <td>
+                <a class="btn btn-dark" (click)="editUser(item)">Editar</a>
+                <a class="btn btn-dark" (click)="deleteUser(item.id)">Eliminar</a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+</div>
+

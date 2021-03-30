@@ -9,6 +9,9 @@ import { RegistrationComponent } from './components/account/registration/registr
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './components/template/dashboard/dashboard.component';
+import { UserComponent } from './components/user/userindex/user.component';
+import { UsercreateComponent } from './components/user/usercreate/usercreate.component';
+import { UsereditComponent } from './components/user/useredit/useredit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DashboardComponent } from './components/template/dashboard/dashboard.co
     NavComponent,
     LoginComponent,
     RegistrationComponent,
-    DashboardComponent
+    DashboardComponent,
+    UserComponent,
+    UsercreateComponent,
+    UsereditComponent
   ],
   imports: [
     BrowserModule,
